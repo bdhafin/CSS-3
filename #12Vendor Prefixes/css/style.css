@@ -4,11 +4,11 @@ body {
 
 img {
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: 3s;
   transition: 3s;
 }
 .tiga {
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
