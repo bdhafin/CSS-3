@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+}
+
+img {
+  filter: grayscale(100%);
+  transition: 3s;
+}
+.tiga {
+  align-content: center;
+}
