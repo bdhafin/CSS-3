@@ -1,0 +1,8 @@
+div{
+    width: 600px;
+    height: 300px;
+    margin: 30px;
+    /* background: radial-gradient(circle, red, green); */
+    /* background: radial-gradient(circle farthest-corner, red ,green); */
+    background: radial-gradient(circle farthest-side at top left, red, blue);
+}
