@@ -98,7 +98,7 @@ h1{
 
 
 .overlay:target img{
-    animation: zoomAndFade 1s;
+    animation: fade 1s;
 }
 
 .overlay .close {
@@ -119,6 +119,26 @@ h1{
     animation: slideDownFade .5s .5s forwards;
 }
 
+/* navigasi */
+.next, .prev {
+    width: 128px;
+    height: 128px;
+    background-image: url(../image/navigation/arr-right.png);
+    position: absolute;
+    text-indent: -99999px;
+    top: 35%;
+    margin-left: 30px;
+    opacity: 0;
+}
+.prev{
+    background-image: url(../image/navigation/arr-left.png);
+    margin-left: -150px;
+}
+
+.overlay:target .next,
+.overlay:target .prev{
+    animation: fade .5s .5s forwards ;
+}
 
 /* animation */
 @keyframes zoomAndFade {
@@ -142,4 +162,13 @@ h1{
         margin-top: 0;
     }
 
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
